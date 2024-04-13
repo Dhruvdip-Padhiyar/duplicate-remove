@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const HomePage = () => {
   const [allData1, setAllData1] = useState("");
   const [allData2, setAllData2] = useState("");
-  const [filteredData, setFilteredData] = useState([123, 1222]);
+  const [filteredData, setFilteredData] = useState([]);
   const handleFilter = () => {
     const data1 = allData1
       .split(",")
