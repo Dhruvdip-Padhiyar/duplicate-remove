@@ -46,12 +46,7 @@ const HomePage = () => {
         </button>
       </div>
       <div className="w-1/2 bg-white h-[300px] overflow-y-auto m-auto border-2 p-4">
-        <textarea
-          value={filteredData.join(",")??""}
-{/*             rows={7} */}
-            className="border-2 w-full"
-{/*             onChange={(e) => setAllData2(e.target.value)} */}
-          />
+        {filteredData.join(",")??""}
         
       </div>
       <p>
