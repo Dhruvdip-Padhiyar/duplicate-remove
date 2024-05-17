@@ -21,7 +21,7 @@ const HomePage = () => {
     <main className="m-auto min-h-screen bg-[#f5f5f5]">
       <div className="flex  items-center justify-evenly px-24 pt-12">
         <div className="flex flex-col w-[45%] gap-2">
-          <label className="text-[20px]">Data 1 :-</label>
+          <label className="text-[20px]">All Data :-</label>
           <textarea
             rows={7}
             className="border-2"
@@ -29,7 +29,7 @@ const HomePage = () => {
           />
         </div>
         <div className="flex flex-col w-[45%] gap-2">
-          <label className="text-[20px]">Data 2 :-</label>
+          <label className="text-[20px]">Data For remove :-</label>
           <textarea
             rows={7}
             className="border-2 w-full"
@@ -46,8 +46,17 @@ const HomePage = () => {
         </button>
       </div>
       <div className="w-1/2 bg-white h-[300px] overflow-y-auto m-auto border-2 p-4">
-        {filteredData.join(",")}
+        <textarea
+          value={filteredData.join(",")??""}
+{/*             rows={7} */}
+            className="border-2 w-full"
+{/*             onChange={(e) => setAllData2(e.target.value)} */}
+          />
+        
       </div>
+      <p>
+      count :- <span className="text-[16px]">{filteredData..length}</span>
+      </p>
     </main>
   );
 };
