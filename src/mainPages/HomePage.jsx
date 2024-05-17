@@ -49,7 +49,7 @@ const HomePage = () => {
         {filteredData.join(",")??""}
         
       </div>
-      <p>
+      <p className="text-center my-4">
       count :- <span className="text-[16px]">{filteredData.length}</span>
       </p>
     </main>
