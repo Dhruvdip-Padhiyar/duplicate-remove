@@ -50,7 +50,7 @@ const HomePage = () => {
         
       </div>
       <p>
-      count :- <span className="text-[16px]">{filteredData..length}</span>
+      count :- <span className="text-[16px]">{filteredData.length}</span>
       </p>
     </main>
   );
