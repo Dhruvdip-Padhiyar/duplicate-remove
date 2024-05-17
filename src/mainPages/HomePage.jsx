@@ -9,11 +9,12 @@ const HomePage = () => {
     const data1 = allData1
       .split(",")
       .filter((element) => !allData2.split(",").includes(element));
-    const data2 = allData2
-      .split(",")
-      .filter((element) => !allData1.split(",").includes(element));
-    console.log([...data1, ...data2]);
-    setFilteredData([...data1, ...data2]);
+    // const data2 = allData2
+    //   .split(",")
+    //   .filter((element) => !allData1.split(",").includes(element));
+    console.log([...data1]);
+    // setFilteredData([...data1, ...data2]);
+    setFilteredData([...data1]);
   };
 
   return (
